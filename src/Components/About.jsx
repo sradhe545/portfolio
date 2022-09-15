@@ -14,9 +14,12 @@ const About = () => {
             <div className="right">
               <div className="topic">I like to code because it's a usable <span style={{color:"#9b1750"}}>ART</span></div>
               <p>
-                Hello World! I'm passinate Frontend Developer based out of Masai school’s intensive and
-                immersive learning. Look forward to joining a company where I
-                will be able to explore My skills. I love to combining the worlds of logic and creative design to make eye-catching,accessible,and user-friendly websites and applications.
+              To work with maximum potential and grow in a
+challenging and dynamic environment, with an
+opportunity of working with diverse groups of
+people and enhancing the professional skill set
+with the learning experience for achieving
+organizational goals.
               </p>
             </div>
           </div>

@@ -16,7 +16,7 @@ const Contects = () => {
             <a href="tel:+919083487594"> <BsFillTelephoneFill id="icon"/></a>
             </div>
             <div>
-              <a href="mailto:sradhe545@gmail.com"target="_blank">
+              <a href="mailto:connect.sradhe545@gmail.com" target="_blank">
                 <BsFillEnvelopeFill id="icon" />
               </a>
             </div>
