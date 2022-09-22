@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineGlobal } from "react-icons/ai";
+import Calendar from "./Calendar";
 
 const Projects = () => {
   return (
@@ -81,9 +82,11 @@ const Projects = () => {
               {/* forth project */}
             </div> 
 
-
+            <Calendar/>
         </div>
+
       </section>
+    
     </>
   );
 };

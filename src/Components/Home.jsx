@@ -12,14 +12,14 @@ const Home = () => {
           <div className="text-three">I'm a <span style={{color:"#9b1750"}}>Full Stack Developer</span> </div>
           <div className="button">
                 <button>
-                  <a href="https://drive.google.com/file/d/1Ithk3j46P8_RlBiCkJmSTK_d-NwUtGio/view" target="_blank">
+                  <a href="https://drive.google.com/file/d/1adNcTtCPuoQOb84JVWAId0DtTR1LMreh/view" target="_blank">
                     Resume
                   </a>
                 </button>
               </div>
         </div>
         <div className='homeImg'>
-          <img src={rss} className='homeImg'/>
+          <img src={rss} className='homeImg'/>y
         </div>
       </div>
     </section>
