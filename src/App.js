@@ -1,28 +1,81 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
-import Home from './Components/Home';
-import About from './Components/About';
-import Skills from './Components/Skills';
-import Projects from './Components/Projects';
-import Footer from './Components/Footer';
-import Contact from './Components/Contact';
-import Calendar from './Components/Calendar';
+import Projects from './Components/Projects/Projects';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Skills from './Components/Skills/Skills';
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
+import PageNotFound from './Components/PageNotFound/PageNotFound';
+import { ThemeProvider } from 'styled-components';
+import Home from './Container/Home';
 
-function App() {
-  return (
-    <div className="App">
-     <Navbar/>
-     <Home/>
-     <About/>
-      <Skills/>
-     <Projects/>
-     
-     <Contact/>
-     <Footer/> 
-    
-    </div>
-  );
-}
+import AnimatedCursor from 'react-animated-cursor';
+const DarkTheme = {
+    backgroundColor: '#F0EBCE', //021f34//#1f2022
+    fontColorHeader: '#008080', ///fff
+    fontColorHeaderHover: '#25265e', //25265e
+    fontColorPrimary: '#b3b9c5', //fff
+    fontColorSecondary: '#b3b9c5', //98c0c6
+    socialIconColor: '#e14eca', //e14eca
+    cardColor: '#212129', //01162a
+    // commonBorder: '#00aaf2', //00aaf2
+};
+const LightTheme = {
+    backgroundColor: '#F0EBCE', //021f34//#1f2022
+    fontColorHeader: '#008080', ///fff
+    fontColorHeaderHover: '#25265e', //25265e
+    fontColorPrimary: '#b3b9c5', //fff
+    fontColorSecondary: '#b3b9c5', //98c0c6
+    socialIconColor: '#e14eca', //e14eca
+    cardColor: '#212129', //01162a
+
+};
+const themes = {
+    light: LightTheme,
+    dark: DarkTheme,
+};
+
+const App = () => {
+    const [currentTheme, setCurrentTheme] = React.useState('light');
+    const themeToggler = () => {
+        currentTheme === 'light'
+            ? setCurrentTheme('dark')
+            : setCurrentTheme('light');
+    };
+    return (
+        <ThemeProvider theme={themes[currentTheme]}>
+            <div className='app'>
+                <AnimatedCursor
+                    innerSize={10}
+                    outerSize={10}
+                    color='255, 46, 99'
+                    outerAlpha={0.4}
+                    innerScale={0.6}
+                    outerScale={0}
+                />
+
+                <Router>
+                    <Switch>
+                        <Home
+                            currentTheme={currentTheme}
+                            themeToggler={themeToggler}
+                        />
+                        <Route exact path='/'>
+                            <Home
+                                currentTheme={currentTheme}
+                                themeToggler={themeToggler}
+                            />
+                        </Route>
+                        <Route path='/projects' component={Projects} />
+                        <Route path='/skills' component={Skills} />
+                        <Route path='/about' component={About} />
+                        <Route path='/contact' component={Contact} />
+                        <Route exact path='*' component={PageNotFound} />
+                    </Switch>
+                </Router>
+            </div>
+        </ThemeProvider>
+    );
+};
 
 export default App;

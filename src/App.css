@@ -213,8 +213,8 @@ nav.sticky .menu-btn{
 .home .homeImg{
   height: 420px;
   width: 400px;
-  object-fit: cover;
-  border-radius: 30px;
+  /* object-fit: cover; */
+  /* border-radius: 30px; */
 }
 .home .text-one{
   margin-top: 100px;
@@ -659,7 +659,17 @@ footer .text span a:hover{
     flex-direction: row;
     /* border: 1px solid black; */
   /* } */ 
- 
+  .myImage{
+    width: 100px;
+
+  }
+  .homeImg{
+    height: 380px;
+    width: 100px;
+    margin-left: -10%;
+    /* object-fit: cover; */
+  
+  }
   
   .home .text-two{
     font-size: 55px;
