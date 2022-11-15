@@ -166,7 +166,7 @@ const Contact = () => {
                                 title={item.title}
                                 style={{ display: 'flex' }}
                             >
-                                <div>
+                                <div style={{marginRight:"8px",marginTop:"7px"}}>
                                     {/* <a target="_blank" rel="noreferrer" href={item.link}  style={{textDecoration:"none"}}> */}
                                     {item.icon}
                                     {/* </a> */}
@@ -178,7 +178,7 @@ const Contact = () => {
                                         href={item.link}
                                         style={{ textDecoration: 'none' }}
                                     >
-                                        <P>{item.display}</P>
+                                        <P style={{ marginLeft: '15px' }}>{item.display}</P>
                                     </a>
                                 </div>
                             </div>

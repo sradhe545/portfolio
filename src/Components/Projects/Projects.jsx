@@ -98,17 +98,19 @@ const Projects = () => {
                                             margin: '20px',
                                             display: 'flex',
                                             justifyContent: 'center',
+                                            
                                         }}
                                     >
                                         {item.tech_stack.map((item) => (
                                             <div
                                                 key={uuidv4()}
+                                                style={{marginLeft:"10px"}}
                                                 className='iconsTechStack'
                                             >
                                                 {item}
                                             </div>
                                         ))}
-                                    </div>
+                                    </div >
                                     <A
                                         href={item.repo_link}
                                         target='_blank'

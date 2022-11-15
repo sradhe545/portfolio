@@ -45,10 +45,10 @@ function Navbar({ themeToggler }) {
                         smooth={true}
                         duration={500}
                     >
-                      Resume
+                      <p style={{marginTop:"1.5px",marginRight:"30px",fontWeight:"700"}}>Resume</p>
                    </a>
             </NavItems>
-            {/* <Toggle themeToggler={themeToggler} /> */}
+            
         </NavBarDiv>
     );
 }

@@ -17,15 +17,15 @@ const Stats = () => {
             <StatsContCont>
                 <StatsCont>
                     <StatsContDiv className='dom-attribute-demo'>
-                        <StatsContH1>1200+</StatsContH1>
+                        <StatsContH1>1000+</StatsContH1>
                         <StatsContH3>Hours of coding</StatsContH3>
                     </StatsContDiv>
                     <StatsContDiv>
-                        <StatsContH1>100+</StatsContH1>
+                        <StatsContH1>50+</StatsContH1>
                         <StatsContH3>Git Commits</StatsContH3>
                     </StatsContDiv>
                     <StatsContDiv>
-                        <StatsContH1>10+</StatsContH1>
+                        <StatsContH1>5+</StatsContH1>
                         <StatsContH3>Projects</StatsContH3>
                     </StatsContDiv>
                     <LastStat>
