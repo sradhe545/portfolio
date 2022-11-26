@@ -20,18 +20,18 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            project_name: 'Tanner Goods Clone',
-            image: 'https://i.postimg.cc/RhVQWt8q/tanner.png',
+            project_name: 'Yoox Clone',
+            image: 'https://i.ibb.co/XYWDdYL/Screenshot-1341.png',
             project_desc:
-                `Tanner Goods is a E-Commerce website offers leather-based products such as wallets and bags`,
-            deploy_link: 'https://tannerclone.vercel.app/',
-            repo_link: 'https://github.com/sradhe545/Tanner-Clone',
+                'This  is an E-Commerce retailer famous worldwide for its latest fashion and trends in menswear and womenswear.',
+            deploy_link: 'https://yoox-clone-by-exclusive.vercel.app/',
+            repo_link: 'https://github.com/Hashal890/Exclusive-Yoox-Clone',
             tech_stack: [
-                <SiHeroku/>,
-                <FaReact/>,
                 <FaHtml5 />,
                 <FaCss3 />,
                 <FaJs />,
+                <FaNodeJs/>,
+                <FaReact/>
             ],
         },
         {
@@ -51,19 +51,18 @@ const Projects = () => {
         },
         {
             id: 3,
-            project_name: 'Big Basket Clone',
-            image: 'https://i.ibb.co/M55FmLw/Screenshot-1104.png',
+            project_name: 'Tanner Goods Clone',
+            image: 'https://i.postimg.cc/RhVQWt8q/tanner.png',
             project_desc:
-                '  This is a E-commerce Website which allows you to order grocery products, fulfil daily needs products and even beauty products within a few clicks.',
-            deploy_link: 'https://ubiquitous-pony-5893de.netlify.app/',
-            repo_link: 'https://github.com/Uchiha-D-Kurosaki/BigBasket-Version-1.0',
+                `Tanner Goods is a E-Commerce website offers leather-based products such as wallets and bags`,
+            deploy_link: 'https://tannerclone.vercel.app/',
+            repo_link: 'https://github.com/sradhe545/Tanner-Clone',
             tech_stack: [
+                <SiHeroku/>,
+                <FaReact/>,
                 <FaHtml5 />,
                 <FaCss3 />,
                 <FaJs />,
-                
-               
-           
             ],
         }
     ];
