@@ -51,14 +51,14 @@ const Projects = () => {
         },
         {
             id: 3,
-            project_name: 'Tanner Goods Clone',
-            image: 'https://i.postimg.cc/RhVQWt8q/tanner.png',
+            project_name: 'Blog App',
+            image: 'https://i.ibb.co/5WKw8nJ/Screenshot-1342.png',
             project_desc:
-                `Tanner Goods is a E-Commerce website offers leather-based products such as wallets and bags`,
-            deploy_link: 'https://tannerclone.vercel.app/',
-            repo_link: 'https://github.com/sradhe545/Tanner-Clone',
+                `This website allows users to post interesting blogs that happened in their lives`,
+            deploy_link: 'https://blogapp-beta.vercel.app/',
+            repo_link: 'https://github.com/sradhe545/Blog_App',
             tech_stack: [
-                <SiHeroku/>,
+                <FaNodeJs/>,
                 <FaReact/>,
                 <FaHtml5 />,
                 <FaCss3 />,

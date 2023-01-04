@@ -3,7 +3,7 @@ import { HeaderContent, H1, P, A, HeaderButtons, TypeWriterH1 } from './Styles';
 import { Container } from '../../SharedStyles/SharedStyles';
 import { Link } from 'react-scroll';
 import Typewriter from 'typewriter-effect';
-import RSS from "../Images/RSS.pdf"
+import RSS from "../Images/RSS_FINAL.pdf"
 const Banner = () => {
     return (
         <Container className='home'>
